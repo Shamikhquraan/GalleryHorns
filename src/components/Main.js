@@ -38,8 +38,7 @@ class Main extends React.Component{
 newArr.map((item)=>{
     return (
 
-
-<HornedBeast class='image' tittle={item.title} imgeUrl={item.image_url} description={item.description} />
+<HornedBeast key={Math.random()}  tittle={item.title} imgeUrl={item.image_url} description={item.description} />
 
     )
 
