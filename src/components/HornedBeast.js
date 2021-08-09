@@ -5,10 +5,10 @@ class HornedBeast extends React.Component{
     
     return (
     
-<div class='imgNew'>
+<div >
      <h2>{this.props.title} </h2>
 
-     <img src={this.props.imgeUrl} class='image' alt="hornedBeast" title="hornedBeast" />
+     <img src={this.props.imgeUrl}  alt="hornedBeast" title="hornedBeast" />
 
      <p>{this.props.description}</p>
      
