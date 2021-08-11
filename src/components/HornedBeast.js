@@ -42,10 +42,12 @@ gitTitle=()=>{
     <Card.Title onClick={this.gitTitle}  >{this.props.title} </Card.Title>
     <Card.Text>
       Vote through the button below :
+      Num of Horns is {this.props.horns}
     </Card.Text>
   </ Card.Body>
   <Button variant="primary" onClick={this.addToVote} > Vote:</Button>
     <Card.Text>Number of votes={this.state.numberOfvote} ✔</Card.Text>
+
 </Card>
 </>
    )
