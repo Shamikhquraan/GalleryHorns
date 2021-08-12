@@ -24,39 +24,17 @@ constructor(props) {
       selectB:{}
     };
   }
-
-
-// gitTitle=title=>{
-//       let hornes = hornsData.find(item => {
-          
-//         if(item.title === title){
-
-//             return item
-//         }
-//     });
-
-//     this.setState({
-//     selectB: hornes,
-//       show: true,
-//     });
-
-
-
-// };
 gitTitle =title => {
-    let beasts = hornsData.find( beast => {
-      if (beast.title === title) {
-        return beast;
+    let objTitle = hornsData.find( item => {
+      if (item.title === title) {
+        return item;
       }
     });
     this.setState({
-        selectB: beasts,
+        selectB: objTitle,
       show: true,
     });
   };
-
-   
-
       handleClose = () => {
         this.setState({
             selectB: {},
